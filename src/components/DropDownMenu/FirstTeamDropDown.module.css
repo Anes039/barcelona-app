@@ -1,0 +1,61 @@
+.text_and_icon {
+    position: absolute;
+    top: 10%;
+    left: 12%;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+  }
+  .text_and_icon img {
+    margin-top: 1.8em;
+    margin-left: 4.9em;
+    width: 19%;
+  }
+  .text_and_icon h3 {
+    color: white;
+    font-family: "Archiro Black";
+  }
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .dropdown {
+    top: 85%;
+    left: -80%;
+    width: max-content;
+    height: auto;
+    padding: 10px 10px;
+    background: #144285;
+    color: white;
+    position: absolute;
+    display: flex;
+    z-index:150;
+    opacity: 0; /* Set the initial opacity to 0 */
+    pointer-events: none; /* Prevent interactions until it's visible */
+    animation: fadeInAnimation 10.3s ease-in-out; /* Add the fadeInAnimation */
+  }
+  .dropdown ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .dropdown.show {
+    opacity: 1; /* When 'show' class is added, the opacity will be 1 */
+  }
+  .leftSide {
+    position: relative;
+    left: -21%;
+  }
+  .grayLine {
+    border-right: 1px solid #ddd;
+    height: 100%;
+    margin-right: 12px;
+    /* Adjust the margin to your preference */
+  }

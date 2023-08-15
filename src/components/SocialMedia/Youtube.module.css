@@ -1,0 +1,41 @@
+.youtube_social_container{
+    background:#ba0100;
+    width:100%;
+    color:white;
+    padding-top:5em;
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    z-index: 30 ;
+}
+.youtube_social_container:hover{
+    border:white 3px solid;
+}
+.social_media_content{
+    padding:15px;
+}
+.youtube_social_container img{
+    width:35%;
+    margin-top:1.4em;
+    padding-letf:100px;
+    margin-left:0.7em;
+}
+.social_media_name{
+    color:white;
+    font-size:9px;
+    padding-left:9.5px;
+    font-family:fcb-bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+
+}
+
+.social_media_handle{
+    margin-top:0.3em;
+    color:white;
+    font-size:13px;
+    padding-left:8px;
+    padding-bottom:15px;
+    font-family:fcb-bold,Arial,Helvetica Neue,Helvetica,sans-serif
+}

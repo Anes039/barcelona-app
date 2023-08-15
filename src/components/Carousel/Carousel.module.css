@@ -1,0 +1,114 @@
+.container {
+  position: relative;
+  top: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.active {
+  grid-column: 1/6;
+  grid-row: 1/8;
+}
+
+.container img {
+  grid-column: 6/8;
+}
+
+.carousel_item {
+  position: relative;
+  top: 70%;
+  display: grid;
+  grid-template-column: repeat(3, 1fr);
+  width: 100%;
+  height: 100%;
+}
+
+.carousel {
+  display: flex;
+  left: 0%;
+  flex-direction: row;
+  margin-top: 5.2em;
+  width: 100%;
+}
+
+.carousel img {
+  width: 100%;
+  border: 0;
+}
+
+.carousel {
+  /* Your default styles for the carousel items go here */
+  transition: transform 0.2s ease; /* Add a smooth transition effect */
+}
+
+.carousel_item h3 {
+  position: absolute;
+  margin-top: 15.8em;
+  left: 15%;
+  transform: translateY(-43%);
+  background: linear-gradient(to right, #100c1c);
+  z-index: 100;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  background-color: transparent;
+  line-width: 60%;
+  padding: 8px 16px;
+  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
+  animation: backInLeft 0.5s ease;
+}
+
+@keyframes backInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) scale(0.8);
+  }
+  80% {
+    transform: translateX(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.back {
+  position: absolute;
+  background: #100c1c;
+  margin-top: 250em;
+  width: 100%;
+  height: 10px;
+  z-index: -1;
+}
+
+.carousel.active {
+  /* Your styles for the active item go here */
+  width: 150%;
+  z-index: 1000;
+}
+
+.carousel:hover {
+  /* Your styles for the items when hovered go here */
+  transform: scale(1.1); /* Increase the size of the item */
+}
+
+.carousel_item {
+  /* Your default styles for the carousel items go here */
+  transition: transform 0.2s ease; /* Add a smooth transition effect */
+}
+
+.active {
+  /* Your styles for the active item go here */
+  transform: scaleX(1); /* Increase the size of the active item */
+  width: 120%;
+  background: #100c1c;
+}
+
+.cap_background {
+  position: absolute;
+  margin-top: 500em;
+  width: 100%;
+  height: fit-content;
+  background-color: #100c1c;
+  color: white;
+}

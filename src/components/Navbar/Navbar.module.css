@@ -1,0 +1,187 @@
+.navbar img {
+  width: 5.9%;
+  height: auto;
+  top: -12%;
+  left: 2%;
+  position: absolute;
+  z-index: 100;
+}
+
+.navbar {
+  position: absolute;
+  top: 10.5%;
+  left: 0;
+  width: 100%;
+  background: #191732;
+  height: 5em;
+  
+}
+.layer {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  width: 100%; /* Make the line span the entire width of the nav */
+  height: 10px; /* Set the thickness of the line */
+
+  background: linear-gradient(to right, #8b0000, #0000ff);
+}
+.back{
+  position:relative;
+  background:#100c1c;
+  margin-top:20em;
+  z-index:-1;
+  width:100%;
+  height:7.4em;
+}
+
+.navbarContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Make the container take at least the full viewport height */
+}
+
+.text_and_iconnn {
+  position: absolute;
+  cursor: pointer;
+  top: 12%;
+  left: 30%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+.text_and_iconnn img {
+  margin-top: 1.3em;
+  margin-left: 0.3em;
+  width: 5%;
+  height:fit-content;
+}
+
+.yellow_menu {
+  display: flex;
+  position: absolute;
+  top: 15.1%;
+  left: 63%;
+  flex-direction: row;
+}
+.museum {
+  display: flex;
+  flex-direction: row;
+  color: #edb62d;
+  cursor: pointer;
+  z-index:150;
+}
+.museum h3 {
+  display: flex;
+  position: relative;
+  margin-left: 0.4em;
+  top: -30.9%;
+}
+.museum img {
+  width: 5%;
+}
+
+.jersey {
+  display: flex;
+  flex-direction: row;
+  color: #edb62d;
+  cursor: pointer;
+  margin-left: 3.9em;
+}
+.jersey h3 {
+  display: flex;
+  position: relative;
+  margin-left: 0.4em;
+  top: -30.9%;
+}
+.jersey img {
+  width: 10%;
+  margin-top: 0.8em;
+  margin-left: 14.4em;
+  color: #edb62d;
+}
+.culers {
+  display: flex;
+  flex-direction: row;
+  color: #edb62d;
+  cursor: pointer;
+  margin-left: 2.3em;
+  cursor: pointer;
+}
+.culers h3 {
+  display: flex;
+  position: relative;
+  margin-left: 0.1em;
+  top: -30.9%;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.thirdDropdown {
+  top: 85%;
+  right: 50%;
+
+  width: max-content;
+  height: auto;
+  padding: 12px 10px 5px;
+  background: #144285;
+  color: white;
+  position: absolute;
+  display: flex;
+  opacity: 0; /* Set the initial opacity to 0 */
+  pointer-events: none; /* Prevent interactions until it's visible */
+  animation: fadeInAnimation 10.3s ease-in-out; /* Add the fadeInAnimation */
+}
+.thirdLeftSide {
+  position: relative;
+  right: 10%;
+}
+.thirdLeftSide li {
+  position: relative;
+  rigth: 12%;
+}
+.thirdDropdown ul {
+  list-style-type: none;
+  display: flex;
+}
+.thirdGrayLine {
+  border-right: 1px solid #ddd;
+  height: 100%;
+  margin-right: 12px;
+  /* Adjust the margin to your preference */
+}
+.fourthDropdown {
+  top: 85%;
+  right: -8%;
+
+  width: 25%;
+  height: auto;
+  padding: 5px 5px 5px;
+  background: #144285;
+  color: white;
+  position: absolute;
+  display: flex;
+  opacity: 0; /* Set the initial opacity to 0 */
+  pointer-events: none; /* Prvent interactions until it's visible */
+  animation: fadeInAnimation 10.3s ease-in-out; /* Add the fadeInAnimation */
+}
+.fourthLeftSide {
+  position: relative;
+  right: 35%;
+}
+.fourthLeftSide li {
+  position: relative;
+  rigth: 50%;
+}
+.fourthDropdown ul {
+  list-style-type: none;
+  display: flex;
+}

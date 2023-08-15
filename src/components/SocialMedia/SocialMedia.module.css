@@ -1,0 +1,21 @@
+.container{
+    justify-content:center;
+    width:100%;
+    align-items:center;
+
+}
+a{
+    text-decoration:none;
+    font-family:fcb-bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight:bold;
+}
+.title{
+    font-size:1.5rem;
+    color:white;
+}
+.social_media_content{
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    width:100%;
+}
