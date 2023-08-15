@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/barcelona-app/static/css/main.bd66423b.css",
+    "main.js": "/barcelona-app/static/js/main.a3ad8141.js",
+    "static/js/787.7e1294cd.chunk.js": "/barcelona-app/static/js/787.7e1294cd.chunk.js",
+    "static/media/background.svg": "/barcelona-app/static/media/background.85b8835a1318707528dfc7a03eac0087.svg",
+    "static/media/barcaLogo.png": "/barcelona-app/static/media/barcaLogo.769ceccd7bf15a8523c7.png",
+    "static/media/down arrow.png": "/barcelona-app/static/media/down arrow.9edfd30de83ab8492410.png",
+    "static/media/icon.svg": "/barcelona-app/static/media/icon.e509090f232a45eea749cb59c0891014.svg",
+    "index.html": "/barcelona-app/index.html",
+    "main.bd66423b.css.map": "/barcelona-app/static/css/main.bd66423b.css.map",
+    "main.a3ad8141.js.map": "/barcelona-app/static/js/main.a3ad8141.js.map",
+    "787.7e1294cd.chunk.js.map": "/barcelona-app/static/js/787.7e1294cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd66423b.css",
+    "static/js/main.a3ad8141.js"
+  ]
+}
