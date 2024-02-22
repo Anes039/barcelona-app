@@ -1,37 +1,79 @@
-.tiktok_social_container{
-    background:black;
-    width:100%;
-    padding-top:5em;
-    position: relative;
+.tiktok_social_container {
+  background: black;
+  width: 100%;
+  padding-top: 5em;
+  position: relative;
+  display: flex;
+  max-height: 2.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  z-index: 30;
+}
+.social_media_content {
+  padding: 15px;
+}
+.tiktok_social_container img {
+  width: 35%;
+  margin-top: 1.4em;
+
+  margin-left: 0.7em;
+}
+.tiktok_social_container:hover {
+  border: white 3px solid;
+  position: relative;
+}
+.social_media_name {
+  color: white;
+  font-size: 9px;
+  position: relative;
+  bottom: 2.5vh;
+  padding-left: 4.5px;
+  font-family: fcb-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.social_media_handle {
+  color: white;
+  font-size: 13px;
+  position: relative;
+
+  padding-right: 2vh;
+
+  bottom: 4vh;
+  font-family: fcb-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+@media (max-width: 1080px) {
+  .wrapper {
     display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
-    z-index: 30 ;
-}
-.social_media_content{
-    padding:15px;
-}
-.tiktok_social_container img{
-    width:35%;
-    margin-top:1.4em;
-    padding-letf:100px;
-    margin-left:0.7em;
-}
-.social_media_name{
-    color:white;
-    font-size:9px;
-    padding-left:9.5px;
-    font-family:fcb-bold,Arial,Helvetica Neue,Helvetica,sans-serif;
-
-}
-
-.social_media_handle{
-    margin-top:0.3em;
-    color:white;
-    font-size:13px;
-    padding-left:8px;
-    padding-bottom:15px;
-    font-family:fcb-bold,Arial,Helvetica Neue,Helvetica,sans-serif
+    flex-wrap: wrap;
+    order: -1;
+  }
+  .social_media_list {
+    min-height: 15rem;
+  }
+  .tiktok_social_container {
+    min-height: 13rem;
+    padding-right: 5.5rem;
+  }
+  .tiktok_social_container img {
+    height: 5.7rem;
+    width: 5.7rem;
+    padding-top: 14.8vh;
+  }
+  .social_media_name h3 {
+    position: relative;
+    top: 6vh;
+    right: 8%;
+    padding-left: 2rem;
+    font-size: 2.3rem;
+    text-wrap: nowrap;
+  }
+  .social_media_handle h3 {
+    position: relative;
+    top: 6vh;
+    right: 8%;
+    padding-left: 2rem;
+    font-size: 2.3rem;
+    text-wrap: nowrap;
+  }
 }

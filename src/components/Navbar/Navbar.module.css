@@ -11,27 +11,24 @@
   position: absolute;
   top: 10.5%;
   left: 0;
-  width: 100%;
+  width: 102%;
   background: #191732;
   height: 5em;
-  
 }
+
 .layer {
-  position: absolute;
-  top: 90%;
-  left: 0;
-  width: 100%; /* Make the line span the entire width of the nav */
+  
   height: 10px; /* Set the thickness of the line */
 
   background: linear-gradient(to right, #8b0000, #0000ff);
 }
-.back{
-  position:relative;
-  background:#100c1c;
-  margin-top:20em;
-  z-index:-1;
-  width:100%;
-  height:7.4em;
+.back {
+  position: relative;
+  background: #100c1c;
+  margin-top: 20em;
+  z-index: -1;
+  width: 100%;
+  height: 7.4em;
 }
 
 .navbarContainer {
@@ -41,19 +38,20 @@
 }
 
 .text_and_iconnn {
-  position: absolute;
+  position: relative;
   cursor: pointer;
-  top: 12%;
   left: 30%;
+  bottom:93vh;
   display: flex;
   flex-direction: row;
   color: white;
 }
 .text_and_iconnn img {
-  margin-top: 1.3em;
-  margin-left: 0.3em;
-  width: 5%;
-  height:fit-content;
+  padding-top: 1.5em;
+  padding-left: 0.3em;
+  height: 3vh;
+  width: 3vh;
+  height: fit-content;
 }
 
 .yellow_menu {
@@ -68,7 +66,7 @@
   flex-direction: row;
   color: #edb62d;
   cursor: pointer;
-  z-index:150;
+  z-index: 150;
 }
 .museum h3 {
   display: flex;
@@ -124,10 +122,9 @@
   }
 }
 
-
 .thirdDropdown {
-  top: 85%;
-  right: 50%;
+  top: 55%;
+  right: 27%;
 
   width: max-content;
   height: auto;
@@ -138,7 +135,7 @@
   display: flex;
   opacity: 0; /* Set the initial opacity to 0 */
   pointer-events: none; /* Prevent interactions until it's visible */
-  animation: fadeInAnimation 10.3s ease-in-out; /* Add the fadeInAnimation */
+  animation: fadeInAnimation 1.8s ease; /* Add the fadeInAnimation */
 }
 .thirdLeftSide {
   position: relative;
@@ -171,7 +168,7 @@
   display: flex;
   opacity: 0; /* Set the initial opacity to 0 */
   pointer-events: none; /* Prvent interactions until it's visible */
-  animation: fadeInAnimation 10.3s ease-in-out; /* Add the fadeInAnimation */
+  animation: fadeInAnimation 1.9s ease; /* Add the fadeInAnimation */
 }
 .fourthLeftSide {
   position: relative;
@@ -184,4 +181,60 @@
 .fourthDropdown ul {
   list-style-type: none;
   display: flex;
+}
+@media (max-width: 1080px) {
+  .navbar {
+    margin-top: 6em;
+    width: auto;
+    min-height: 55vh;
+  }
+  .navbar img{
+    width: 8.9%;
+    height: auto;
+    top: -42%;
+    left: 0%;
+  }
+  .text_and_iconnn {
+    bottom: 10vh;
+  }
+  .museum {
+    text-wrap: nowrap;
+    position: relative;
+    right: 26vh;
+    top:15vh;
+    font-size: 13.5px;
+  }
+  .museum svg{
+    width:3.5rem;
+    height:3.5rem;
+  }
+  .museum h3 {
+    padding-top: 2.9px;
+    font-size:3rem;
+  }
+  .jersey {
+    position: relative;
+    top:15vh;
+      right: 0vh;
+    margin-left: 0;
+  }
+  .jersey svg{
+    width:3.5rem;
+    height:3.5rem;
+  }
+  .jersey h3{
+    font-size:3rem;
+  }
+  .culers{
+    position: relative;
+    top:15vh;
+    left:24%;
+  }
+  .culers svg{
+    width:3.5rem;
+    height:3.5rem;
+  }
+  .culers h3{
+    font-size:3rem;
+  }
 }

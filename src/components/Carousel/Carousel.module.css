@@ -25,10 +25,10 @@
 
 .carousel {
   display: flex;
+  position: relative;
+  bottom: 55%;
   left: 0%;
   flex-direction: row;
-  margin-top: 5.2em;
-  width: 100%;
 }
 
 .carousel img {
@@ -95,6 +95,8 @@
 .carousel_item {
   /* Your default styles for the carousel items go here */
   transition: transform 0.2s ease; /* Add a smooth transition effect */
+  position: relative;
+  top: 7.3vh;
 }
 
 .active {
@@ -104,11 +106,9 @@
   background: #100c1c;
 }
 
-.cap_background {
-  position: absolute;
-  margin-top: 500em;
-  width: 100%;
-  height: fit-content;
-  background-color: #100c1c;
-  color: white;
+@media (max-width: 767px) {
+  .carousel {
+    display: inherit;
+    padding-top: 30vh;
+  }
 }

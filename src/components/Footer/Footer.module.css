@@ -5,6 +5,17 @@
     color:white;
     z-index:100;
 }
-.fototer p{
+.footer p{
     color:white;
 }
+
+
+@media (max-width:1080px){
+    .footer{
+        position:relative;
+        top:25rem;
+        right:20%;
+        display:none;
+    }
+}
+

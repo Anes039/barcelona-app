@@ -25,10 +25,10 @@ const FirstTeamDropDown = () => {
         <img src={arrow} alt="arrow" />
       </h3>
       {isFirstTeamDropDownShown && (
-        <div className={`${classes.dropdown} ${classes.fadeIn} show`}>
+        <div key={!isFirstTeamDropDownShown} className={`${classes.dropdown} ${classes.fadeIn} show`}>
           {
-            <ul>
-              <div className={classes.leftSide}>
+            <ul key={!isFirstTeamDropDownShown}>
+              <div  className={classes.leftSide}>
                 <li>Latest</li>
                 <li>Schedule</li>
                 <li>Tickets</li>

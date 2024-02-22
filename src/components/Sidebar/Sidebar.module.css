@@ -1,0 +1,184 @@
+.burger {
+  position: relative;
+  top: 2.8%;
+  left: 18%;
+  background-color: white;
+  display: block;
+  height: 5vh;
+  width: 5vh;
+}
+.navigation_content  .active{
+  padding: 2rem;
+  position: relative;
+  top:0;
+  right:50rem;
+  height:50vh;
+  width:50vh;
+}
+.navigation_container {
+  display: grid;
+  grid-template-rows: 5%;
+  position: relative;
+  left: 25vh;
+}
+.top_menu {
+  display: flex;
+}
+.yellow {
+  color: #edb62d;
+}
+
+.active {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100rem; 
+  height: 100rem; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1000; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+.list_container li {
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.search_bar input::placeholder {
+  font-size: 9px;
+  color: white;
+  position: relative;
+  left: 9%;
+}
+.museum {
+  display: flex;
+  gap: 1.5vh;
+  text-wrap: nowrap;
+}
+.museum svg {
+  position: relative;
+  top: 10vh;
+}
+.jersey {
+  display: flex;
+  gap: 2.1vh;
+}
+.jersey svg {
+  position: relative;
+  top: 10vh;
+}
+.culers {
+  display: flex;
+  gap: 1.5vh;
+}
+.culers svg {
+  position: relative;
+  top: 10vh;
+}
+.search {
+  position: relative;
+  top: 13vh;
+  right: 45%;
+}
+
+@media (max-width: 1080px) {
+  .burger_container {
+    cursor:pointer;
+    position: relative;
+    top: 2.8%;
+    left: 18%;
+    background-color: white;
+    display: block;
+    height: 15vh;
+    width: 15vh;
+  }
+  .burger_container svg{
+    heigth:5rem;
+    width:5rem;
+  }
+
+  .burger {
+    display: block;
+    position: relative;
+  }
+  .jersey h3 {
+    position: relative;
+    bottom: 0.6vh;
+  }
+  .museum svg {
+    top: 3vh;
+  }
+  .search_bar {
+    position: relative;
+    bottom: 4vh;
+    left: 42%;
+  }
+  .search_bar input {
+    min-width: 148%;
+    background: #312e48;
+    padding: 4.5px;
+  }
+  .search_bar svg {
+    color: white;
+  }
+  .search {
+    top: 3.6vh;
+  }
+  .text_and_iconn {
+    position: relative;
+    bottom: 7vh;
+  }
+  .text_and_iconnn {
+    position: relative;
+    bottom: 14vh;
+  }
+  .jersey svg {
+    position: relative;
+    top: 2vh;
+  }
+  .arroww {
+    position: relative;
+    left: 2vh;
+    top: 1vh !important;
+    height: 2.5em;
+    width: 2.5em;
+  }
+  .white_arrow {
+    position: relative;
+    left: 29vh;
+    top: -7vh !important;
+    height: 2.5em;
+    width: 2.5em;
+  }
+  .white_arroww {
+    position: relative;
+    left: 33vh;
+    top: -7vh !important;
+    height: 2.5em;
+    width: 2.5em;
+  }
+  .arrow {
+    position: relative;
+    left: 18vh;
+    top: 1vh !important;
+    height: 2.5em;
+    width: 2.5em;
+  }
+
+  .culers svg {
+    top: 2.5vh;
+  }
+  .text_and_icon li {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 1080px) {
+  .burger {
+    display: block;
+    right: 0;
+  }
+}

@@ -12,8 +12,8 @@ const Spotify = () => {
               alt="spotify"
             />
             <div className={classes.social_media_description}>
-              <div className={classes.social_media_name}>Fc Barcelona</div>
-              <div className={classes.social_media_handle}>@fc barcelona</div>
+              <div className={classes.social_media_name}><h3>Fc Barcelona</h3></div>
+              <div className={classes.social_media_handle}> <h3>@fc barcelona </h3></div>
             </div>
           </a>
         </li>

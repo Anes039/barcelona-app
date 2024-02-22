@@ -1,137 +1,168 @@
-.btn{
-	box-shadow:inset 0px 0px 15px 3px #23395e;
-	background: linear-gradient(to right, #2e466e 0%, #415989 100%);
-	width:max-content;
-	border-radius:18px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Georgia;
-	font-size:15px;
-	font-weight:bold;
-	padding:10px 23px;
-	text-decoration:none;
-	text-shadow:0px 1px 50px #263666;
-	positon:absolute;
-	
+.btn {
+  box-shadow: inset 0px 0px 15px 3px #23395e;
+  background: linear-gradient(to right, #2e466e 0%, #415989 100%);
+  width: max-content;
+  border-radius: 18px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Georgia;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 23px;
+  text-decoration: none;
+  text-shadow: 0px 1px 50px #263666;
+  positon: absolute;
 }
+
 .btn:hover {
-	background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
-	background-color:#415989;
+  background: linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+  background-color: #415989;
 }
 .btn:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
-.container{
-	position:absolute;
-	left:5%;
-	top:2%;
-	width:38%;
-	justify-content:space-between;
+.container {
+  position: relative;
+  left: 5%;
+  top: 2vh;
+  width: 38%;
+  justify-content: space-between;
 }
-.txt{
-	color:yellow;
-	text-transform:uppercase;
+.txt {
+  color: yellow;
+  text-transform: uppercase;
 }
-.lista{
-	display:flex;
-	position:absolute;
-	margin-left:51em;
-	top:-50%;
+.lista {
+  display: flex;
+  position: absolute;
+  margin-left: 51em;
+  top: -50%;
 }
-.lista{
-	list-style-type:none;
+.lista {
+  list-style-type: none;
 }
-.lista img{
-	height:3.5em;
-
+.lista img {
+  height: 3.5em;
 }
-.lista li{
-	color:white;
+.lista li {
+  color: white;
 }
-.text{
-	padding-top:15px;
-	padding-left:8px;
-	text-decoration:underline;
+.text {
+  padding-top: 15px;
+  padding-left: 8px;
+  text-decoration: underline;
 }
 .lista li img {
-	/* Add these styles to remove padding and margin for the img elements */
-	background:none;
+  background: none;
+  height: 6vh;
+}
+.barca_btn {
+  background: #9f161d;
+  padding: 7px 10px;
+  display: flex;
+  height: 4.2em;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.person {
+  padding-top: 0.5em;
+}
+.person img {
+  height: 2vh;
+  padding-top: 2em;
+}
+.barca_btn h3 {
+  color: white;
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+.barca_btn img {
+  padding-right: 8px;
+  height: 100%;
+  margin-bottom: 0.4em;
+}
+
+li {
+  padding-left: 15px;
+  margin-bottom: 1.4em;
+  cursor: pointer;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: #292d4b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.6em;
+  margin-top: 0.6em;
+}
+
+.circle select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.circle select::after {
+  content: "\25BE";
+  display: inline-block;
+  margin-left: 5px;
+  transform: translateY(1px);
+}
+
+.circle select:focus {
+  outline: none;
+  border: 2px solid white;
+}
+.en {
+  padding-right: 15px;
+  font-weight: bold;
+}
+.en:hover {
+  color: black;
+  background-color: red;
+  border-radius: 1em;
+}
+.circle:hover {
+  background: red;
+}
+
+@media (max-width: 1080px) {
+  .btn {
+    display: none;
   }
   .barca_btn {
-	background: #9f161d;
-	padding: 7px 10px; /* Increase the padding for a larger button */
-	display: flex;
-	height:4.2em;
-	align-items: center; /* Center the content vertically */
-	border-radius: 10px;
-	margin-bottom: 1em;
-	transition: transform 0.2s; /* Add a smooth transition on hover */
-	cursor: pointer;
+    display: none;
   }
-  .person img{
-	height:5px;
-	padding-top:7px;
-  }
-  .barca_btn h3 {
-	color: white;
-	font-weight: bold;
-	margin-right:1em;
-	 /* Remove any default margin */
-  }
-  
-  .barca_btn img {
-	padding-right: 8px; /* Increase the spacing between the text and image */
-	height:100%;
-	margin-bottom:0.4em;
-  }
-  
-  li{
-	padding-left:15px;
-	margin-bottom:1.4em;
-	cursor:pointer;
-  }
-       
   .circle {
-	width: 40px; /* Set a fixed width and height for the circle */
-	height: 40px;
-	background-color: #292d4b; /* Circle background color */
-	border-radius: 50%; /* Create a circle shape */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-left:1.6em;
-	margin-top:0.6em;
+    display: none;
+    position: relative;
+    bottom: 15vh;
   }
-  
-  /* Style the <select> element to hide the default arrow */
-  .circle select {
-	appearance: none;
-	background-color: transparent;
-	border: none;
-	color: white;
-	font-size: 16px;
-	cursor: pointer;
+  .en {
+    display: none;
   }
-  
-  /* Style the arrow inside the circle */
-  .circle select::after {
-	content: '\25BE'; /* Unicode code for a down arrow */
-	display: inline-block;
-	margin-left: 5px;
-	transform: translateY(1px); /* Adjust vertical alignment */
+  .lista li {
+    display: flex;
   }
-  
-  /* Apply a white border to the circle when the dropdown is open */
-  .circle select:focus {
-	outline: none;
-	border: 2px solid white;
+  .lista h3 {
+    position: relative;
+    left: 4vh;
+	font-size:3rem;
   }
-  .en{
-	padding-right:15px;
-	font-weight:bold;
+  .lista li img {
+    height: 15vh;
   }
-  .circle:hover{
-	background:red;
-  }
+}

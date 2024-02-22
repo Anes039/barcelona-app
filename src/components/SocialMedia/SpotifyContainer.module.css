@@ -1,37 +1,74 @@
-.spotify_social_container{
-    background:#00d264;
-    width:100%;
-    padding-top:5em;
+.spotify_social_container {
+  background: #00d264;
+  position: relative;
+  width: 100%;
+  color: white;
+  padding-top: 4em;
+  position: relative;
+
+  display: flex;
+  height: 3.2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  z-index: 30;
+}
+.spotify_social_container:hover {
+  border: white 3px solid;
+}
+.social_media_content {
+  padding: 1rem;
+}
+.spotify_social_container img {
+  width: 35%;
+  margin-top: 1.4em;
+
+  margin-left: 0.7em;
+}
+.social_media_name h3 {
+  color: white;
+  font-size: 9px;
+  position: relative;
+  bottom: 0vh;
+  padding-left: 4.5px;
+  font-family: fcb-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.social_media_handle h3 {
+  color: white;
+  font-size: 13px;
+  position: relative;
+  bottom: 1.0vh;
+  padding-right: 2vh;
+
+  font-family: fcb-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+@media (max-width: 1080px) {
+  .spotify_social_container {
+    min-height: 11.5rem;
+    padding-right: 10rem;
+  }
+  .spotify_social_container img {
+    padding-top: 5.8rem;
+    /* position: relative; */
+    height: 7rem;
+    width: 7rem;
+  }
+  .social_media_name h3 {
     position: relative;
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
-    z-index: 30 ;
-}
-.social_media_content{
-    padding:15px;
-}
-.spotify_social_container img{
-    width:35%;
-    margin-top:1.4em;
-    padding-letf:100px;
-    margin-left:0.7em;
-}
-.social_media_name{
-    color:white;
-    font-size:9px;
-    padding-left:9.5px;
-    font-family:fcb-bold,Arial,Helvetica Neue,Helvetica,sans-serif;
-
-}
-
-.social_media_handle{
-    margin-top:0.3em;
-    color:white;
-    font-size:13px;
-    padding-left:8px;
-    padding-bottom:15px;
-    font-family:fcb-bold,Arial,Helvetica Neue,Helvetica,sans-serif
+    top: 3vh;
+    right: 8%;
+    padding-left: 2rem;
+    font-size: 2.3rem;
+    text-wrap: nowrap;
+  }
+  .social_media_handle h3 {
+    position: relative;
+    top: 0vh;
+    right: 8%;
+    padding-left: 2rem;
+    font-size: 2.3rem;
+    text-wrap: nowrap;
+  }
 }

@@ -3,9 +3,11 @@ import classes from "./MainHeader.module.css";
 import profile from "../IMG/icon.svg";
 import Barca from "../IMG/Barcaa-removebg-preview.png";
 import Navbar from "./Navbar/Navbar";
-import person from '../IMG/person.png';
+import person from "../IMG/person.png";
+import Sidebar from './Sidebar/Sidebar';
+
+
 const MainHeader = () => {
-  
   return (
     <Card>
       <div className={classes.container}>
@@ -15,12 +17,18 @@ const MainHeader = () => {
           <span className={classes.txt}>Buy Now Your Tickets</span>
         </button>
         <ul className={classes.lista}>
-          <li className={{ width: "50%" }}>
-            <img  className={classes.person} src='https://cdn-icons-png.flaticon.com/128/9131/9131478.png' alt="" />
+          <li>
+            <img
+              className={classes.person}
+              src="https://cdn-icons-png.flaticon.com/128/9131/9131478.png"
+              alt=""
+            />
+            <h3>Login</h3>
           </li>
-          <li className={classes.text}>Login</li>
+         
           <li>
             <button className={classes.barca_btn}>
+              
               <img src={Barca} alt="" />
               <h3>Register</h3>
             </button>
@@ -28,10 +36,10 @@ const MainHeader = () => {
           <li className={classes.circle}>
             <p className={classes.en}>EN</p>
           </li>
+         <Sidebar />
         </ul>
-       
       </div>
-      <Navbar/>
+      <Navbar />
     </Card>
   );
 };

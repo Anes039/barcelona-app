@@ -18,10 +18,14 @@ const SocialMedia = () => {
            
             <FbContainer/>
             <Twitter/>
-            <Spotify/>
+            <TikTok/>
+            <div className={classes.second_container}>
             <Youtube/>
-            <Instagram />
-            <TikTok />
+            
+            <Spotify/>
+            <Instagram/>
+            </div>
+            
           </div>
         </a>
       </div>

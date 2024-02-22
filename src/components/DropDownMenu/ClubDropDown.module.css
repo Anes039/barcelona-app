@@ -1,5 +1,5 @@
 .text_and_iconn {
-    position: absolute;
+    position: relative;
     top: 10%;
     left: 22%;
     display: flex;
@@ -8,9 +8,10 @@
     color: white;
   }
   .text_and_iconn img {
-    margin-top:1.9em;
-    margin-left: 2.3em;
-    width: 40%;
+    margin-top:1.7em;
+    margin-left: 0.8em;
+    width: 3vh;
+    height:3vh;
   }@keyframes fadeInAnimation {
     0% {
       opacity: 0;
@@ -34,7 +35,7 @@
     display: flex;
     opacity: 0; /* Set the initial opacity to 0 */
     pointer-events: none; /* Prevent interactions until it's visible */
-    animation: fadeInAnimation 10.3s ease-in-out; /* Add the fadeInAnimation */
+    animation: fadeInAnimation 1.9s ease; /* Add the fadeInAnimation */
   }
   .secondLeftSide {
     position: relative;
@@ -53,4 +54,10 @@
     height: 100%;
     margin-right: 12px;
     /* Adjust the margin to your preference */
+  }
+  @media (max-width:1080px){
+    .text_and_iconn h3{
+      position: relative;
+      bottom:39vh;
+    }
   }
