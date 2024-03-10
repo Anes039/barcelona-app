@@ -1,20 +1,17 @@
-import React, { useContext } from "react";
-import { Context } from "./components/Context/Context";
-import "./App.css";
-import MainHeader from "./components/MainHeader";
-
-function App({ isActive }) {
-  const { isOpen } = useContext(Context);
+import { useContext } from 'react';
+import { Context } from './components/Context/Context';
+import './App.css';
+import MainHeader from './components/MainHeader';
+import Sidebar from './components/Sidebar/Sidebar'; 
+import { useState } from 'react';
+function App(isActive) {
+    const {isOpen} = useContext(Context);
   
   return (
-    <div value= {isOpen}>
-      {isActive && !isOpen ? (
-        <div className="App">
-          <MainHeader className="show" />
-        </div>
-      ) : (
-        <div className="hide"></div>
-      )}
+    <div className="App">
+      {console.log(isOpen)}
+      <Sidebar />
+        <MainHeader value = {!isOpen}/>
     </div>
   );
 }

@@ -12,7 +12,8 @@ const ContextProvider = (props) => {
 
   return (
     <Context.Provider value={{ onClickHandler, isOpen, setIsOpen }}>
-      {props.children}
+      {" "}
+      {props.children}{" "}
     </Context.Provider>
   );
 };

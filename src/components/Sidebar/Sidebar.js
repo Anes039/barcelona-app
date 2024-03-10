@@ -10,9 +10,17 @@ import { useContext } from "react";
 import { Context } from "../Context/Context";
 
 import { useState } from "react";
-const Sidebar = ({ isActive }) => {
+import { isVisible } from "@testing-library/user-event/dist/utils";
+const Sidebar = () => {
+  const [visible, setISVisible] = useState(true);
   const { isOpen, onClickHandler } = useContext(Context);
 
+
+  const buttonHandler = () => {
+    setISVisible(!visible);
+    console.log("Peshendetje");
+  };
+  
   return (
     <div>
       <div
@@ -20,59 +28,86 @@ const Sidebar = ({ isActive }) => {
         value={!isOpen}
         onClick={onClickHandler}
       >
-        <RxHamburgerMenu className={classes.burger} />
+        <RxHamburgerMenu value={buttonHandler} className={classes.burger} />
       </div>
-      {!isOpen && isActive &&(
-        <div className={` ${classes.active} ${classes.navigation_content}   `}>
+      {isOpen && (
+        <div
+          value={isOpen}
+          className={` ${classes.active} ${classes.navigation_content}   `}
+        >
           <div className={`${classes.top_menu} ${classes.active}`}>
-            <IoCloseOutline />
             <div className={classes.search_bar}>
-              <IoIosSearch className={classes.search} />
+              <IoIosSearch
+                className={`  ${classes.active}    ${classes.search}`}
+              />
               <input
                 type="text"
                 placeholder="Search Fc Barcelona for players,news,video,etc"
               />
             </div>
-            <div className= {` ${classes.list_container}  ${classes.active} ` }>
+            <div className={` ${classes.list_container}  ${classes.active} `}>
               <li>
                 <div className={`${classes.museum} ${classes.yellow}`}>
-                  <ConfirmationNumberIcon
-                    className={classes.ticket}
-                    style={{ color: "#edb62d" }}
-                  />
-                  <h3>Tickets & Museums</h3>{" "}
+                  <div className={classes.ticket_container}>
+                    <ConfirmationNumberIcon
+                      className={classes.ticket}
+                      style={{ color: "#edb62d" }}
+                    />
+                    <h3>Tickets & Museums</h3>
+                    
+                  </div>
+
                   <IoMdArrowDropright className={classes.arroww} />
                 </div>
               </li>
               <li>
                 <div className={`${classes.jersey} ${classes.yellow}`}>
-                  <LocalMallIcon style={{}} />
-                  <h3>Shop</h3> <IoMdArrowDropright className={classes.arrow} />
+                  <div className={classes.shop}>
+                    <LocalMallIcon style={{}} />
+                    <h3>Shop</h3>
+                  </div>
+                  <IoMdArrowDropright className={classes.arroww} />
                 </div>
               </li>
               <li>
                 <div className={`${classes.culers} ${classes.yellow}`}>
-                  <Diversity3Icon style={{}} />
-                  <h3>Culers</h3>
+                  <div className={classes.culers_content}>
+                    <Diversity3Icon style={{}} />
+                    <h3>Culers</h3>
+                  </div>
+
                   <IoMdArrowDropright className={classes.arrow} />
                 </div>
               </li>
               <li>
                 <div className={classes.text_and_icon}>
-                  <h3>First Team</h3>
-                  <IoMdArrowDropright className={classes.white_arrow} />
+                  <div className={classes.first}>
+                    <h3>First Team</h3>
+                    <IoMdArrowDropright className={classes.first_arrow} />
+                  </div>
                 </div>
               </li>
               <li>
                 <div className={classes.text_and_iconn}>
-                  <h3>Club</h3>
-                  <IoMdArrowDropright className={classes.white_arroww} />
+                  <div className={classes.club}>
+                    <h3>Club</h3>
+                    <IoMdArrowDropright className={classes.club_arrow} />
+                  </div>
                 </div>
               </li>
               <li>
                 <div className={classes.text_and_iconnn}>
-                  <h3>Barca Team</h3>
-                  <IoMdArrowDropright className={classes.white_arrow} />
+                  <div className={classes.barca}>
+                    <h3>Barca Team</h3>
+                    <IoMdArrowDropright className={classes.white_arrow} />
+                  </div>
+                </div>
+                <div className={classes.close_container}>
+                  <IoCloseOutline
+                    value={!isOpen}
+                    onClick={onClickHandler}
+                    className={classes.close}
+                  />
                 </div>
               </li>
             </div>

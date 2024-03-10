@@ -41,7 +41,7 @@
   position: relative;
   cursor: pointer;
   left: 30%;
-  bottom:93vh;
+  bottom:93.5vh;
   display: flex;
   flex-direction: row;
   color: white;
@@ -189,10 +189,12 @@
     min-height: 55vh;
   }
   .navbar img{
-    width: 8.9%;
-    height: auto;
-    top: -42%;
+    width: 5.9%;
+    top: -39%;
     left: 0%;
+  }
+  .barca img{
+    min-height:2rem !important;
   }
   .text_and_iconnn {
     bottom: 10vh;

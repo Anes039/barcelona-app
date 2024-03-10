@@ -5,9 +5,10 @@ import Barca from "../IMG/Barcaa-removebg-preview.png";
 import Navbar from "./Navbar/Navbar";
 import person from "../IMG/person.png";
 import Sidebar from './Sidebar/Sidebar';
-
+import {useState} from 'react';
 
 const MainHeader = () => {
+  
   return (
     <Card>
       <div className={classes.container}>
@@ -36,7 +37,7 @@ const MainHeader = () => {
           <li className={classes.circle}>
             <p className={classes.en}>EN</p>
           </li>
-         <Sidebar />
+         
         </ul>
       </div>
       <Navbar />

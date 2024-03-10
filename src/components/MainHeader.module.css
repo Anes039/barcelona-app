@@ -26,7 +26,7 @@
 .container {
   position: relative;
   left: 5%;
-  top: 2vh;
+  top: 1.5vh;
   width: 38%;
   justify-content: space-between;
 }
@@ -160,7 +160,7 @@ li {
   .lista h3 {
     position: relative;
     left: 4vh;
-	font-size:3rem;
+    font-size: 3rem;
   }
   .lista li img {
     height: 15vh;
