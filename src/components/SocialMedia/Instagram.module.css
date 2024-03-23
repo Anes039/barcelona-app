@@ -30,8 +30,11 @@
   text-align: left;
   z-index: 30;
 }
-.instagram_social_container:hover {
-  border: white 3px solid;
+.instagram_social_container:hover::after {
+  content: "";
+  position: absolute;
+  border: 2px white solid;
+  inset:0;
 }
 .social_media_content {
   padding: 1rem;
@@ -63,29 +66,29 @@
 
 @media (max-width: 1080px) {
   .instagram_social_container {
-    min-height: 11.5rem;
-    padding-right: 8rem;
+    min-height: 15.5rem;
+    
   }
   .instagram_social_container img {
-    padding-top: 5.8rem;
+    padding-top: 7.8rem;
     /* position: relative; */
     height: 5rem;
     width: 5rem;
   }
   .social_media_name h3 {
     position: relative;
-    top: 6vh;
-    right: 8%;
-    padding-left: 2rem;
-    font-size: 2.3rem;
+    right: 0%;
+    top: 7vh;
+    /* padding-left: 0px; */
+    font-size: 3.3rem;
     text-wrap: nowrap;
   }
   .social_media_handle h3 {
     position: relative;
-    top: 4vh;
+    top: 3vh;
     right: 8%;
     padding-left: 2rem;
-    font-size: 2.3rem;
+    font-size: 3.3rem;
     text-wrap: nowrap;
   }
 }

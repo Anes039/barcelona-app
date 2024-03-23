@@ -3,7 +3,7 @@ import classes from "./SpotifyContainer.module.css";
 
 const Spotify = () => {
   return (
-    <Card>
+    <div className = {classes.wrapper}>
       <ul className={classes.social_media_list}>
         <li className={classes.spotify_social_container}>
           <a href="#">
@@ -18,7 +18,7 @@ const Spotify = () => {
           </a>
         </li>
       </ul>
-    </Card>
+    </div>
   );
 };
 

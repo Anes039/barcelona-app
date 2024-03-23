@@ -6,24 +6,23 @@ const FirstTeamDropDown = () => {
     const [isClubDropDownShown, setIsClubDropDownShown] = useState(false);
 
     const showClubDropDownHandler = () => {
-        setIsClubDropDownShown(true);
+        setIsClubDropDownShown(!isClubDropDownShown);
+        console.log("hello");
       };
     
-      const hideClubDropDownHandler = () => {
-        setIsClubDropDownShown(false);
-      };
+      
 
   return (
     <div className={classes.text_and_iconn}>
       <h3
-        onMouseEnter={showClubDropDownHandler}
-        onMouseLeave={hideClubDropDownHandler}
+        onClick={showClubDropDownHandler}
+        
       >
         Club
         <img src={arrow} alt="arrow" />
       </h3>
       {isClubDropDownShown && (
-        <div className={`${classes.secondDropdown} ${classes.fadeIn} show`}>
+        <div  className={`${classes.secondDropdown} ${classes.fadeIn} show`}>
           <ul>
             <div className={classes.secondLeftSide}>
               <li>Espai Barca</li>

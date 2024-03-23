@@ -48,8 +48,8 @@ const TeamPlayList = (isActive) => {
         <div className={classes.secondContainer}>
           <div className={classes.secondWrapper}>
             <div className={classes.secondTitle}>
-              {" "}
-              <h3>Barca News</h3>{" "}
+              
+              <h3>Barca News</h3>=
             </div>
             <div className={classes.Items}>
             <div className={classes.secondImageWrapper}>

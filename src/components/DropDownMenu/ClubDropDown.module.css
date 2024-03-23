@@ -1,6 +1,6 @@
 .text_and_iconn {
     position: relative;
-    top: 10%;
+    top:-2%;
     left: 22%;
     display: flex;
     flex-direction: row;
@@ -27,15 +27,15 @@
     left: -450%;
     z-index:150;
     width: max-content;
-    height: min;
+    height:50px;
     padding: 10px 5px 5px;
     background: #144285;
     color: white;
     position: absolute;
     display: flex;
-    opacity: 0; /* Set the initial opacity to 0 */
-    pointer-events: none; /* Prevent interactions until it's visible */
-    animation: fadeInAnimation 1.9s ease; /* Add the fadeInAnimation */
+    opacity: 1; /* Set the initial opacity to 0 */
+   
+    animation: fadeInAnimation 1.3s ease; /* Add the fadeInAnimation */
   }
   .secondLeftSide {
     position: relative;

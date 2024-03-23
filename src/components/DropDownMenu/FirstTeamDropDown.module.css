@@ -1,6 +1,6 @@
 .text_and_icon {
     position: absolute;
-    top: 23%;
+    top: 10%;
     left: 12%;
     display: flex;
     flex-direction: row;
@@ -31,19 +31,22 @@
     left: -80%;
     width: max-content;
     height: auto;
-    padding: 10px 10px;
+    padding: 1rem 1rem;
     background: #144285;
     color: white;
     position: absolute;
     display: flex;
     z-index:150;
-    opacity: 0; 
+    opacity: 1; 
     pointer-events: none; 
     animation: fadeInAnimation 1.3s ease; 
   }
   .dropdown ul {
     list-style-type: none;
     display: flex;
+  }
+  .dropdown  li::hover {
+    cursor:pointer;
   }
   
   .dropdown.show {

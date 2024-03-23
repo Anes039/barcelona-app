@@ -8,18 +8,13 @@ const FirstTeamDropDown = () => {
     useState(false);
 
   const showFirstTeamDropDownHandler = () => {
-    setIsFirstTeamDropDownShown(true);
-  };
-
-  const hideFirstTeamDropDownHandler = () => {
-    setIsFirstTeamDropDownShown(false);
+    setIsFirstTeamDropDownShown(!isFirstTeamDropDownShown);
   };
 
   return (
     <div className={classes.text_and_icon}>
       <h3
-        onMouseEnter={showFirstTeamDropDownHandler}
-        onMouseLeave={hideFirstTeamDropDownHandler}
+        onClick={showFirstTeamDropDownHandler}
       >
         First Team
         <img src={arrow} alt="arrow" />

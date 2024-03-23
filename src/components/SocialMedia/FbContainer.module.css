@@ -12,13 +12,28 @@
 }
 .social_media_content {
 }
+.wrapper {
+  position: relative;
+}
+.social_media_list {
+  position: relative;
+}
+.fb_social_container:hover::after {
+  content: "";
+  position: absolute;
+  border: 2px white solid;
+  inset: 0;
+  /* top:0;
+  right:0;
+  bottom:0;
+  left:0; */
+}
 .fb_social_container img {
   width: 35%;
   margin-top: 1.4em;
   margin-left: 0.7em;
 }
 .fb_social_container:hover {
-  border: white 3px solid;
 }
 .social_media_name {
   color: white;
@@ -46,27 +61,31 @@
     order: -2;
   }
   .fb_social_container {
-    min-height: 13rem;
-    padding-right:5.5rem;
+    min-height: 15rem;
+    width: 25rem;
   }
 
   .fb_social_container img {
-    padding-top: 14.5vh;
+    height: 7rem;
+    width: 7rem;
+    padding-top: 17.5vh;
+    min-height: 1.5rem;
+    border-radius:2rem;
   }
   .social_media_name h3 {
     position: relative;
-    top: 6vh;
-    right: 8%;
-    padding-left: 2rem;
-    font-size: 2.3rem;
+    right: 0%;
+    top: 7vh;
+    /* padding-left: 0px; */
+    font-size: 3.3rem;
     text-wrap: nowrap;
   }
   .social_media_handle h3 {
     position: relative;
-    top: 6vh;
+    top: 3vh;
     right: 8%;
     padding-left: 2rem;
-    font-size: 2.3rem;
+    font-size: 3.3rem;
     text-wrap: nowrap;
   }
 }

@@ -37,8 +37,8 @@
 }
 
 .carousel {
-  /* Your default styles for the carousel items go here */
-  transition: transform 0.2s ease; /* Add a smooth transition effect */
+  
+  transition: transform 0.2s ease; 
 }
 
 .carousel_item h3 {
@@ -82,33 +82,50 @@
 }
 
 .carousel.active {
-  /* Your styles for the active item go here */
+ 
   width: 150%;
   z-index: 1000;
 }
 
 .carousel:hover {
-  /* Your styles for the items when hovered go here */
-  transform: scale(1.1); /* Increase the size of the item */
+
+  transform: scale(1.1); 
 }
 
 .carousel_item {
-  /* Your default styles for the carousel items go here */
-  transition: transform 0.2s ease; /* Add a smooth transition effect */
+ 
+  transition: transform 0.2s ease; 
   position: relative;
   top: 7.3vh;
 }
 
 .active {
-  /* Your styles for the active item go here */
-  transform: scaleX(1); /* Increase the size of the active item */
+
+  transform: scaleX(1);
   width: 120%;
   background: #100c1c;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1080px) {
   .carousel {
     display: inherit;
     padding-top: 30vh;
+  }
+  .active{
+    width:auto;
+  }
+  .carousel img{
+   max-height:100rem;
+    padding-top:1rem;
+    position:absolute;
+  }
+  .text{
+    display:none;
+  }
+  .carousel_item h3{
+    display:none;
+  }
+  .carousel_item {
+    z-index:100;
   }
 }

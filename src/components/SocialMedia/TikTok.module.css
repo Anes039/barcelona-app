@@ -19,9 +19,11 @@
 
   margin-left: 0.7em;
 }
-.tiktok_social_container:hover {
-  border: white 3px solid;
-  position: relative;
+.tiktok_social_container:hover::after {
+  content: "";
+  position: absolute;
+  border: 2px white solid;
+  inset:0;
 }
 .social_media_name {
   color: white;
@@ -52,28 +54,28 @@
     min-height: 15rem;
   }
   .tiktok_social_container {
-    min-height: 13rem;
-    padding-right: 5.5rem;
+    min-height: 15rem;
+    width:25rem;
   }
   .tiktok_social_container img {
     height: 5.7rem;
     width: 5.7rem;
-    padding-top: 14.8vh;
+    padding-top: 17.8vh;
   }
   .social_media_name h3 {
     position: relative;
-    top: 6vh;
-    right: 8%;
-    padding-left: 2rem;
-    font-size: 2.3rem;
+    right: 0%;
+    top: 7vh;
+    /* padding-left: 0px; */
+    font-size: 3.3rem;
     text-wrap: nowrap;
   }
   .social_media_handle h3 {
     position: relative;
-    top: 6vh;
+    top: 3vh;
     right: 8%;
     padding-left: 2rem;
-    font-size: 2.3rem;
+    font-size: 3.3rem;
     text-wrap: nowrap;
   }
 }

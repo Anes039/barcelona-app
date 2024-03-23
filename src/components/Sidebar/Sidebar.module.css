@@ -109,6 +109,7 @@
       opacity:0;
     }
   }
+ 
   .list_container {
     animation: rightToLeft 0.5s ease forwards;
     
@@ -119,7 +120,7 @@
     cursor: pointer;
     position: relative;
     padding-top:2rem;
-    left: 60rem;
+    left: 80rem;
   
     display: block;
     min-height: 100%;
@@ -161,7 +162,7 @@
 
   .jersey h3 {
     position: relative;
-    bottom: 0.6vh;
+    bottom: 2.6vh;
   }
   .museum {
     padding-right: 7rem; 
@@ -183,8 +184,8 @@
     color: white;
   }
   .navigation_content .active {
-    padding-bottom: 120%;
-    padding-right: 9.9rem;
+    padding-bottom: 76%;
+    padding-right: 21.9rem;
       animation: rightToLeft 0.5s ease forwards;
  
   }
@@ -244,7 +245,7 @@
   }
   .arroww {
     position: relative;
-    left: 2vh;
+    left: 19.8rem;
     top: 6vh !important;
     height: 2.5em;
     width: 2.5em;
@@ -265,6 +266,8 @@
   }
   .first svg {
     fill: white;
+    position: relative;
+    left: 18.4rem;
   }
   .first_arrow svg {
     fill: white;
@@ -278,7 +281,7 @@
   }
   .arrow {
     position: relative;
-    left: 18vh;
+    left: 15rem;
     top: 2.5vh;
     height: 2.5em;
     width: 2.5em;
@@ -294,7 +297,7 @@
   }
   .culers_content {
     display: flex;
-    gap: 1rem;
+    gap: 7rem;
   }
   .first {
     display: flex;
@@ -307,7 +310,7 @@
   .club svg {
     position: relative;
     top: 2rem;
-    left: 2%;
+    left: 29%;
     fill: white;
   }
   .barca {
@@ -316,14 +319,20 @@
   }
   .barca svg {
     fill: white;
+    position: relative;
+    left:55.4%;
   }
   .culers {
     position: relative;
-    right: 5%;
+    right: 7%;
   }
   .culers svg {
     top: 4.5vh;
-    left: 2.1%;
+    left: 25.5%;
+  }
+  .person svg{
+    position: relative;
+    right:2rem;
   }
   .text_and_icon {
     display: flex;

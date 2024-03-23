@@ -17,7 +17,6 @@
 }
 
 .layer {
-  
   height: 10px; /* Set the thickness of the line */
 
   background: linear-gradient(to right, #8b0000, #0000ff);
@@ -41,7 +40,7 @@
   position: relative;
   cursor: pointer;
   left: 30%;
-  bottom:93.5vh;
+  bottom: 94.9vh;
   display: flex;
   flex-direction: row;
   color: white;
@@ -133,7 +132,7 @@
   color: white;
   position: absolute;
   display: flex;
-  opacity: 0; /* Set the initial opacity to 0 */
+  opacity: 1; /* Set the initial opacity to 0 */
   pointer-events: none; /* Prevent interactions until it's visible */
   animation: fadeInAnimation 1.8s ease; /* Add the fadeInAnimation */
 }
@@ -166,9 +165,9 @@
   color: white;
   position: absolute;
   display: flex;
-  opacity: 0; /* Set the initial opacity to 0 */
+  opacity: 1; /* Set the initial opacity to 0 */
   pointer-events: none; /* Prvent interactions until it's visible */
-  animation: fadeInAnimation 1.9s ease; /* Add the fadeInAnimation */
+  animation: fadeInAnimation 1s ease; /* Add the fadeInAnimation */
 }
 .fourthLeftSide {
   position: relative;
@@ -183,18 +182,23 @@
   display: flex;
 }
 @media (max-width: 1080px) {
+  .yellow_menu {
+    top: 7.2rem;
+  }
   .navbar {
     margin-top: 6em;
     width: auto;
     min-height: 55vh;
   }
-  .navbar img{
+  .navbar img {
     width: 5.9%;
     top: -39%;
     left: 0%;
   }
-  .barca img{
-    min-height:2rem !important;
+  .barca img > :first-child {
+    position: relative !important;
+    left: 10rem !important;
+    min-height: 2rem !important;
   }
   .text_and_iconnn {
     bottom: 10vh;
@@ -203,40 +207,40 @@
     text-wrap: nowrap;
     position: relative;
     right: 26vh;
-    top:15vh;
+    top: 15vh;
     font-size: 13.5px;
   }
-  .museum svg{
-    width:3.5rem;
-    height:3.5rem;
+  .museum svg {
+    width: 3.5rem;
+    height: 3.5rem;
   }
   .museum h3 {
     padding-top: 2.9px;
-    font-size:3rem;
+    font-size: 3rem;
   }
   .jersey {
     position: relative;
-    top:15vh;
-      right: 0vh;
+    top: 15vh;
+    right: 0vh;
     margin-left: 0;
   }
-  .jersey svg{
-    width:3.5rem;
-    height:3.5rem;
+  .jersey svg {
+    width: 3.5rem;
+    height: 3.5rem;
   }
-  .jersey h3{
-    font-size:3rem;
+  .jersey h3 {
+    font-size: 3rem;
   }
-  .culers{
+  .culers {
     position: relative;
-    top:15vh;
-    left:24%;
+    top: 15vh;
+    left: 24%;
   }
-  .culers svg{
-    width:3.5rem;
-    height:3.5rem;
+  .culers svg {
+    width: 3.5rem;
+    height: 3.5rem;
   }
-  .culers h3{
-    font-size:3rem;
+  .culers h3 {
+    font-size: 3rem;
   }
 }

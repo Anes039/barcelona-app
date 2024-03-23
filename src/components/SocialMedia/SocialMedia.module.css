@@ -32,15 +32,16 @@ a {
   }
   .title {
     position: relative;
-    right: 14%;
+    bottom:0em;
+    right:18%;
     font-size: 3rem;
   }
 
   .container {
     position: relative;
-    top: 43rem;
+    top: 42rem;
     text-align: center;
-    right: 5%;
+    right: 4%;
   }
   .img {
     padding-top: 25%;
@@ -48,8 +49,8 @@ a {
   .second_container {
     display: flex;
     position: relative;
-    top: 19rem;
+    top: 23rem;
     text-align: center;
-    right: 59.5%;
+    right:49.5%;
   }
 }

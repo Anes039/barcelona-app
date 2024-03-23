@@ -40,16 +40,11 @@ const Navbar = () => {
   //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
   const showTicketDropDown = () => {
-    setIsTicketDropDownShown(true);
+    setIsTicketDropDownShown(!isTicketDropDownShown);
   };
-  const hideTicketDropDown = () => {
-    setIsTicketDropDownShown(false);
-  };
+  
   const showCulerDropDownHandler = () => {
-    setIsCulersDropDownShown(true);
-  };
-  const hideCulerDropDownHandler = () => {
-    setIsCulersDropDownShown(false);
+    setIsCulersDropDownShown(!isCulersDropDownShown);
   };
 
   return (
@@ -80,8 +75,8 @@ const Navbar = () => {
           <div className={classes.museum}>
             <ConfirmationNumberIcon style={{ color: "#edb62d" }} />
             <h3
-              onMouseEnter={showTicketDropDown}
-              onMouseLeave={hideTicketDropDown}
+              onClick={showTicketDropDown}
+              
             >
               Tickets & Museums
             </h3>
@@ -133,8 +128,8 @@ const Navbar = () => {
               }}
             />
             <h3
-              onMouseEnter={showCulerDropDownHandler}
-              onMouseLeave={hideCulerDropDownHandler}
+              onMouseClick={showCulerDropDownHandler}
+             
             >
               Culers
             </h3>

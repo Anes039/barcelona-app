@@ -22,7 +22,7 @@ const Sidebar = () => {
   };
   
   return (
-    <div>
+    <div className={classes.container}>
       <div
         className={classes.burger_container}
         value={!isOpen}
@@ -72,7 +72,7 @@ const Sidebar = () => {
               <li>
                 <div className={`${classes.culers} ${classes.yellow}`}>
                   <div className={classes.culers_content}>
-                    <Diversity3Icon style={{}} />
+                    <Diversity3Icon className={classes.person} style={{}} />
                     <h3>Culers</h3>
                   </div>
 

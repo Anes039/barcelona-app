@@ -19,8 +19,19 @@
   padding-letf: 100px;
   margin-left: 0.7em;
 }
-.twitter_social_container:hover {
+/* .twitter_social_container:hover {
   border: white 3px solid;
+} */
+
+.twitter_social_container:hover::after {
+  content: "";
+  position: absolute;
+  border: 2px white solid;
+  inset:0;
+  /* top:0;
+  right:0;
+  bottom:0;
+  left:0; */
 }
 .social_media_name {
   color: white;
@@ -49,26 +60,27 @@
   }
   .twitter_social_container {
     text-align: center;
-    min-height: 13rem;
-    padding-right:5.5rem;
+    min-height: 15rem;
+    width:25rem;
+  
   }
   .twitter_social_container img {
     padding-top: 14vh;
   }
   .social_media_name h3 {
     position: relative;
-    right: 8%;
+    right: 6%;
     top: 7vh;
     /* padding-left: 0px; */
-    font-size: 2.3rem;
+    font-size: 3.3rem;
     text-wrap: nowrap;
   }
   .social_media_handle h3 {
     position: relative;
-    right: 4%;
-    top: 6vh;
-    /* padding-left: 0px; */
-    font-size: 2.3rem;
+    top: 3vh;
+    right: 8%;
+    padding-left: 2rem;
+    font-size: 3.3rem;
     text-wrap: nowrap;
   }
 }

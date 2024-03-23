@@ -12,7 +12,10 @@
 }
 @media (max-width: 1080px) {
   .container {
-    position: relative;
+    display:none;
+    position: absolute;
     top: 25.8rem;
+    z-index:-999;
+    right:500%;
   }
 }
