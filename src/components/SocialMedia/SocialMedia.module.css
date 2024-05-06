@@ -28,20 +28,23 @@ a {
 @media (max-width: 1080px) {
   .social_media_content {
     position: relative;
-    left: 5%;
+    left: 68rem;
+    max-width: 69%;
   }
   .title {
     position: relative;
     bottom:0em;
-    right:18%;
+    left: 147%;
+    text-wrap: nowrap;
     font-size: 3rem;
   }
 
   .container {
     position: relative;
-    top: 42rem;
+    top: 51rem;
     text-align: center;
-    right: 4%;
+    right: 56%;
+    max-width: 50%;
   }
   .img {
     padding-top: 25%;
@@ -51,6 +54,7 @@ a {
     position: relative;
     top: 23rem;
     text-align: center;
-    right:49.5%;
+    right: 67rem;
+    max-width: 50%;
   }
 }

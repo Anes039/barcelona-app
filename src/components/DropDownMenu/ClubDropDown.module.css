@@ -24,19 +24,20 @@
   }
   .secondDropdown {
     top: 85%;
-    left: -450%;
+    left:-10%;
     z-index:150;
-    width: max-content;
-    height:50px;
+    width: 25%;
+    height:auto;
     padding: 10px 5px 5px;
     background: #144285;
     color: white;
     position: absolute;
     display: flex;
     opacity: 1; /* Set the initial opacity to 0 */
-   
-    animation: fadeInAnimation 1.3s ease; /* Add the fadeInAnimation */
+    pointer-events: none;
+    animation: fadeInAnimation 1.8s ease; /* Add the fadeInAnimation */
   }
+  
   .secondLeftSide {
     position: relative;
     left: -9%;
@@ -44,6 +45,11 @@
   .secondLeftSide li {
     position: relative;
     left: -9%;
+  }
+  .secondLeftSide li::hover{
+    position: relative;
+    text-decoration: underline 1px red;
+    cursor:pointer;
   }
   .secondDropdown ul {
     list-style-type: none;
@@ -59,5 +65,8 @@
     .text_and_iconn h3{
       position: relative;
       bottom:39vh;
+    }
+    .text_and_iconn{
+      left:0;
     }
   }

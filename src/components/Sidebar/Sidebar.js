@@ -10,14 +10,14 @@ import { useContext } from "react";
 import { Context } from "../Context/Context";
 
 import { useState } from "react";
-import { isVisible } from "@testing-library/user-event/dist/utils";
+import { isVisible } from "@testing-library/user-event/dist/utils"; 
 const Sidebar = () => {
-  const [visible, setISVisible] = useState(true);
+  const [visible, setVisible] = useState(true);
   const { isOpen, onClickHandler } = useContext(Context);
 
 
   const buttonHandler = () => {
-    setISVisible(!visible);
+    setVisible(!visible);
     console.log("Peshendetje");
   };
   

@@ -8,6 +8,7 @@
   height: 5vh;
   width: 5vh;
 }
+
 .navigation_content .active {
   padding: 2rem;
   position: relative;
@@ -89,6 +90,7 @@
 }
 
 @media (max-width: 1080px) {
+
   @keyframes rightToLeft  {
     0% {
       transform: translateX(100%);
@@ -116,15 +118,15 @@
     bottom: 5rem;
   }
   .burger_container {
-    z-index:100;
+    position: absolute;
+    z-index: 100;
     cursor: pointer;
-    position: relative;
-    padding-top:2rem;
-    left: 80rem;
-  
-    display: block;
-    min-height: 100%;
-    min-width:100%;
+    /* position: relative; */
+    padding-top: 2rem;
+    left: 49rem;
+    
+    display: inline;
+    
   }
   
   .burger_container svg {
@@ -143,10 +145,11 @@
 
     position: relative;
     padding-bottom: 25rem;
+    
   }
   .navigation_content svg {
     position: relative;
-    top: 3.5vh;
+    top: -2.5vh;
     height: 5rem;
     width: 5rem;
   }
@@ -165,20 +168,19 @@
     bottom: 2.6vh;
   }
   .museum {
-    padding-right: 7rem; 
-    gap: 31rem;
+    gap: 6rem;
+        position: relative;
+        left: 9rem;
   }
   .jersey {
     position: relative;
-    right: 5%;
-    gap: 52rem;
+    right: -20%;
+    gap: 27rem;
   }
   .museum svg {
     top: 5vh;
   }
-  .culers {
-    gap: 50rem;
-  }
+  
   input {
     font-size: 2.8rem;
     color: white;
@@ -187,18 +189,21 @@
     padding-bottom: 76%;
     padding-right: 21.9rem;
       animation: rightToLeft 0.5s ease forwards;
+      position: relative;
+    top:19%;
  
   }
   .close_container{
     position: relative;
-    bottom: 67rem;
-    right: 103%;
+    bottom: 63rem;
+    right:70%;
+  
   }
   .close_container::hover{
     cursor:pointer;
   }
   .close {
-    position: relative;
+    position: absolute;
     top: 25%;
     border-radius:1rem;
     background: white;
@@ -208,7 +213,7 @@
     fill: white;
   }
   .search_bar {
-    display: flex;
+    display: none;
    
     top: 54.7%;
     right: 11%;
@@ -245,14 +250,14 @@
   }
   .arroww {
     position: relative;
-    left: 19.8rem;
+    left: 9.8rem;
     top: 6vh !important;
     height: 2.5em;
     width: 2.5em;
   }
   .white_arrow {
     position: relative;
-    left: 29vh;
+    left: 5vh;
 
     height: 2.5em;
     width: 2.5em;
@@ -267,7 +272,8 @@
   .first svg {
     fill: white;
     position: relative;
-    left: 18.4rem;
+    top:4.5vh;
+    left: 8.9rem;
   }
   .first_arrow svg {
     fill: white;
@@ -281,7 +287,7 @@
   }
   .arrow {
     position: relative;
-    left: 15rem;
+    left: 0rem;
     top: 2.5vh;
     height: 2.5em;
     width: 2.5em;
@@ -301,30 +307,40 @@
   }
   .first {
     display: flex;
-    gap: 52rem;
+    gap: 28rem;
+    position: relative;
+    left: 12rem;
   }
   .club {
     display: flex;
-    gap: 59rem;
+        gap: 40rem;
+        position: relative;
+        left: 15rem;
   }
   .club svg {
     position: relative;
     top: 2rem;
-    left: 29%;
+    left: 10%;
     fill: white;
   }
   .barca {
     display: flex;
-    gap: 36.7rem;
+    /* gap: 36.7rem; */
+    /* display: flex; */
+    gap: 21.4rem;
+    position: relative;
+    left: 15rem;
   }
   .barca svg {
     fill: white;
     position: relative;
-    left:55.4%;
+    top:5.5vh;
+    left:31.4%;
   }
   .culers {
     position: relative;
-    right: 7%;
+    right: -10%;
+        gap: 23rem;
   }
   .culers svg {
     top: 4.5vh;

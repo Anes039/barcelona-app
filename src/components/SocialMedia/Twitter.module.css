@@ -61,7 +61,7 @@
   .twitter_social_container {
     text-align: center;
     min-height: 15rem;
-    width:25rem;
+    width:19rem;
   
   }
   .twitter_social_container img {
@@ -70,17 +70,17 @@
   .social_media_name h3 {
     position: relative;
     right: 6%;
-    top: 7vh;
+    top: 11vh;
     /* padding-left: 0px; */
-    font-size: 3.3rem;
+    font-size: 2.5rem;
     text-wrap: nowrap;
   }
   .social_media_handle h3 {
     position: relative;
-    top: 3vh;
+    top: 10vh;
     right: 8%;
     padding-left: 2rem;
-    font-size: 3.3rem;
+    font-size: 2.3rem;
     text-wrap: nowrap;
   }
 }

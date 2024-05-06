@@ -115,7 +115,8 @@
     width:auto;
   }
   .carousel img{
-   max-height:100rem;
+    max-height: 65rem;
+    max-width: 95rem;
     padding-top:1rem;
     position:absolute;
   }

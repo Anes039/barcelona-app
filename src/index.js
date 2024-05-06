@@ -1,29 +1,23 @@
-
-import React, { useContext } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 import './index.css';
-import ContextProvider from './components/Context/Context';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
+import {useContext} from 'react';
+import {Context} from './components/Context/Context';
 
-
-//// 1) First call the useContext here so you can use and make a conditional ternary operator 
-//2) Then create a css class that will do the same thing for other components as well
 
 const Root = () => {
- 
-  
+  const ctx = useContext(Context);
   return (
     <React.StrictMode>
-      <ContextProvider>
-          <App/>
-      </ContextProvider>
-     
+      <BrowserRouter>
+        <Routes>
+          <Route path="/barcelona-app" element={<App ctx={ctx} /> } />
+        </Routes>
+      </BrowserRouter>
     </React.StrictMode>
   );
 }
 
-ReactDOM.render(<Root />, document.getElementById('root'));
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+createRoot(document.getElementById('root')).render(<Root />);

@@ -167,7 +167,7 @@
   display: flex;
   opacity: 1; /* Set the initial opacity to 0 */
   pointer-events: none; /* Prvent interactions until it's visible */
-  animation: fadeInAnimation 1s ease; /* Add the fadeInAnimation */
+  animation: fadeInAnimation 1.8s ease; /* Add the fadeInAnimation */
 }
 .fourthLeftSide {
   position: relative;
@@ -187,11 +187,11 @@
   }
   .navbar {
     margin-top: 6em;
-    width: auto;
+    min-width:70rem;
     min-height: 55vh;
   }
   .navbar img {
-    width: 5.9%;
+    width: 10.9%;
     top: -39%;
     left: 0%;
   }
@@ -206,7 +206,7 @@
   .museum {
     text-wrap: nowrap;
     position: relative;
-    right: 26vh;
+    right: 39vh;
     top: 15vh;
     font-size: 13.5px;
   }
@@ -221,7 +221,7 @@
   .jersey {
     position: relative;
     top: 15vh;
-    right: 0vh;
+    right: 24vh;
     margin-left: 0;
   }
   .jersey svg {
@@ -234,7 +234,7 @@
   .culers {
     position: relative;
     top: 15vh;
-    left: 24%;
+    left: -8%;
   }
   .culers svg {
     width: 3.5rem;

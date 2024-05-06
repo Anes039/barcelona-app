@@ -126,7 +126,7 @@
 
   @media(max-width:1080px){
     .container{
-      position: unset;
+      display:none;
     }
     .title{
       position: relative;

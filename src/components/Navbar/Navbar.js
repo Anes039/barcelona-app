@@ -128,7 +128,7 @@ const Navbar = () => {
               }}
             />
             <h3
-              onMouseClick={showCulerDropDownHandler}
+              onClick={showCulerDropDownHandler}
              
             >
               Culers
