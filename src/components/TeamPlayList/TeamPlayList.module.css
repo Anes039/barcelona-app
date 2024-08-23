@@ -2,7 +2,7 @@
     background: white;
     align-items: center;
     justify-content: center;
-    position: relative;
+  
     margin-top: 28.3em;
     left: 1.2%;
     right: 5%;
@@ -124,36 +124,32 @@
     color: black;
   }
 
+
   @media(max-width:1080px){
+   
+    .imageWrapper {
+      margin-left:0;
+    }
     .container{
-      display:none;
-    }
-    .title{
-      position: relative;
-      bottom:12vh;
-      right:31.5vh;
-    }
-    .imageWrapper{
-      height:0;
-    }
-    .wrapper{
-      position: relative;
-      top:7.5vh;
-    }
-    .secondContainer{
-      position: relative;
-      top:15vh;
-    }
-    .secondContainer p{
-      position: relative;
-      bottom:25vh;
-    }
-    .secondContainer h3{
       position:relative;
-      bottom:27vh;
-      right:27vh;
+      top:19rem;
+      width:96%;
+    }
+    .Items  p {
+      font-size:2rem;
     }
     .secondImageWrapper {
-      display:none;
+      margin-left:0;
+    }
+   .secondImageWrapper p {
+    font-size: 2.5rem;
+    padding-top: 0;
+    width: min(77%, 473px);
+   }
+  }
+  @media(max-width:450px){
+    .title {
+      font-size:2.5rem;
     }
   }
+    

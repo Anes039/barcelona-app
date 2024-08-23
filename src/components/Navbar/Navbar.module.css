@@ -11,7 +11,7 @@
   position: absolute;
   top: 10.5%;
   left: 0;
-  width: 102%;
+  width:min(107%,103rem);
   background: #191732;
   height: 5em;
 }
@@ -37,16 +37,17 @@
 }
 
 .text_and_iconnn {
-  position: relative;
+  position: absolute;
   cursor: pointer;
-  left: 30%;
+  top: 76px;
+  left: 25%;
   bottom: 94.9vh;
   display: flex;
   flex-direction: row;
   color: white;
 }
 .text_and_iconnn img {
-  padding-top: 1.5em;
+  padding-top: 1.6em;
   padding-left: 0.3em;
   height: 3vh;
   width: 3vh;
@@ -183,7 +184,11 @@
 }
 @media (max-width: 1080px) {
   .yellow_menu {
-    top: 7.2rem;
+    position: absolute;
+        left: 0;
+        top: 30%;
+        gap: 9rem;
+        justify-content: space-between;
   }
   .navbar {
     margin-top: 6em;
@@ -201,12 +206,12 @@
     min-height: 2rem !important;
   }
   .text_and_iconnn {
-    bottom: 10vh;
+    display:none;
   }
   .museum {
     text-wrap: nowrap;
-    position: relative;
-    right: 39vh;
+    
+    right: 56%;
     top: 15vh;
     font-size: 13.5px;
   }
@@ -215,32 +220,34 @@
     height: 3.5rem;
   }
   .museum h3 {
-    padding-top: 2.9px;
-    font-size: 3rem;
+    padding-top: 18.9px;
+    font-size: 2rem;
   }
   .jersey {
-    position: relative;
-    top: 15vh;
-    right: 24vh;
+    
+    top: 16.5vh;
+    right: 34%;
     margin-left: 0;
   }
   .jersey svg {
-    width: 3.5rem;
+    width: 3.5rem !important;
     height: 3.5rem;
   }
   .jersey h3 {
-    font-size: 3rem;
+    font-size: 2rem;
+    padding-top: 18.9px;
   }
   .culers {
-    position: relative;
-    top: 15vh;
-    left: -8%;
+    
+    top: 17vh;
+    right:16%;
   }
   .culers svg {
     width: 3.5rem;
     height: 3.5rem;
   }
   .culers h3 {
-    font-size: 3rem;
+    font-size: 2rem;
+    padding-top:10px;
   }
 }

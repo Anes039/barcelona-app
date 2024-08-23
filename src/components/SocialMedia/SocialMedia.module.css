@@ -3,7 +3,7 @@ ul {
 }
 .container {
   justify-content: center;
-  width: 100%;
+  padding-right:9.3rem;
   align-items: center;
 }
 a {
@@ -14,12 +14,14 @@ a {
 .title {
   font-size: 1.5rem;
   color: white;
+  padding-inline-start: 29rem;
+
 }
 .social_media_content {
   align-items: center;
   justify-content: center;
   display: flex;
-  width: 100%;
+  
 }
 .second_container {
   display: flex;
@@ -32,16 +34,17 @@ a {
     max-width: 69%;
   }
   .title {
-    position: relative;
+    
     bottom:0em;
     left: 147%;
     text-wrap: nowrap;
     font-size: 3rem;
+    padding-inline-start: 50rem;
   }
 
   .container {
     position: relative;
-    top: 51rem;
+    top: 19rem;
     text-align: center;
     right: 56%;
     max-width: 50%;
