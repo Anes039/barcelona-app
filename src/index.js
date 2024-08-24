@@ -16,7 +16,7 @@ const Root = () => {
       <ContextProvider>
         <BrowserRouter>
           <Routes>
-            <Route path="/barcelona-app" element={<App />} />
+            <Route path="/" element={<App />} />
           </Routes>
         </BrowserRouter>
       </ContextProvider>
